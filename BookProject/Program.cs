@@ -237,8 +237,8 @@ namespace BookProject
 
                 case MenuTypes.KitabinAdiniAxtarmaq:
                     string bookName = PrimiteHelper.ReadString("Axtaris ucun adi en az 3 herfini qeyd edin:");
-                    var data = bookManager.FindByName(bookName);
-                    if (data.Length == 0)
+                    var dataBook = bookManager.FindByName(bookName);
+                    if (dataBook.Length == 0)
                     {
                         Console.WriteLine("Tapilmadi...");
 
